@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 // TODO: replace with your own MongoDB connection string
-mongoose.connect("mongodb://127.0.0.1:27017/url_shortener");
+mongoose.connect("mongodb+srv://admin:admin1231@devcamp-shorten-url.izcskiu.mongodb.net/?appName=DEVCAMP-shorten-url");
 
 const urlSchema = new mongoose.Schema({
   originalUrl: String,
